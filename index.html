@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tadeo Ríos · Mix My Flow · Estudio de grabación y mezcla en Morelia</title>
+<meta name="description" content="Grabación, mezcla y mastering en Morelia, Michoacán. Mezcla a distancia desde $1,500. Estudio desde $360 la hora. Aparta en línea, sin preguntar precios.">
+<meta name="theme-color" content="#0A0A0B">
+
+<meta property="og:title" content="Tadeo Ríos · Mix My Flow">
+<meta property="og:description" content="No solo hago que suenes bien. Hago que te escuchen. Grabación y mezcla en Morelia.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --negro:#0A0A0B;
+  --carbon:#141416;
+  --borde:#26262A;
+  --naranja:#F08A3C;
+  --naranja-hondo:#C96D26;
+  --hueso:#EDEAE4;
+  --gris:#8A8A8E;
+
+  --display:'Oswald',system-ui,sans-serif;
+  --texto:'Barlow Condensed',system-ui,sans-serif;
+
+  --ancho:640px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+html{-webkit-text-size-adjust:100%}
+
+body{
+  background:var(--negro);
+  color:var(--hueso);
+  font-family:var(--texto);
+  font-size:19px;
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+
+.envoltura{max-width:var(--ancho);margin:0 auto;padding:0 22px}
+
+a{color:inherit}
+
+:focus-visible{outline:2px solid var(--naranja);outline-offset:3px}
+
+/* ---------- ENCABEZADO ---------- */
+
+.cabecera{padding:28px 0 0}
+
+.logo{width:118px;height:auto;display:block;margin-bottom:26px}
+
+.nombre{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:clamp(54px,15.5vw,96px);
+  line-height:.86;
+  letter-spacing:-.02em;
+  margin-bottom:16px;
+}
+.nombre b{color:var(--naranja);font-weight:700}
+
+.oficio{
+  font-size:20px;
+  color:var(--gris);
+  line-height:1.35;
+  max-width:30ch;
+  margin-bottom:22px;
+}
+
+.lema{
+  font-family:var(--display);
+  font-weight:400;
+  font-size:23px;
+  line-height:1.24;
+  max-width:20ch;
+  padding-left:16px;
+  border-left:3px solid var(--naranja);
+}
+
+/* ---------- LAS DOS PUERTAS ---------- */
+
+.puertas{padding:38px 0 8px;display:grid;gap:16px}
+
+.puerta{
+  display:block;
+  text-decoration:none;
+  background:var(--carbon);
+  border:1px solid var(--borde);
+  padding:26px 24px 24px;
+  transition:border-color .18s ease,background .18s ease;
+}
+.puerta:hover,.puerta:focus-visible{border-color:var(--naranja);background:#17171A}
+
+.donde{
+  font-family:var(--display);
+  font-size:13px;
+  font-weight:500;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--naranja);
+  display:block;
+  margin-bottom:12px;
+}
+
+.puerta h2{
+  font-family:var(--display);
+  font-weight:600;
+  font-size:38px;
+  line-height:1;
+  margin-bottom:6px;
+}
+
+.puerta .precio{
+  font-family:var(--display);
+  font-weight:500;
+  font-size:25px;
+  color:var(--naranja);
+  margin-bottom:14px;
+}
+.puerta .precio small{font-size:16px;color:var(--gris);font-weight:400}
+
+.puerta .dice{color:var(--gris);font-size:18px;line-height:1.45;margin-bottom:22px;max-width:42ch}
+
+.boton{
+  display:inline-block;
+  background:var(--naranja);
+  color:#0A0A0B;
+  font-family:var(--display);
+  font-weight:600;
+  font-size:17px;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+  padding:14px 26px;
+}
+.puerta:hover .boton{background:var(--naranja-hondo)}
+
+/* ---------- PERFIL ---------- */
+
+.perfil{
+  padding:24px 0 10px;
+  font-size:18px;
+  color:var(--gris);
+  line-height:1.45;
+}
+.perfil a{color:var(--hueso);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--naranja)}
+
+/* ---------- FOTOS ---------- */
+
+.fotos{padding:34px 0 6px;display:grid;gap:8px}
+.fotos .par{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.fotos img{width:100%;display:block;object-fit:cover}
+.fotos .ancha{aspect-ratio:16/9}
+.fotos .par img{aspect-ratio:1}
+.pie-foto{color:var(--gris);font-size:16px;line-height:1.4;margin-top:4px}
+
+/* ---------- DESPLEGABLES ---------- */
+
+.bloque{border-top:1px solid var(--borde);margin-top:38px}
+
+details summary{
+  list-style:none;cursor:pointer;
+  padding:22px 0;
+  font-family:var(--display);
+  font-weight:500;font-size:24px;
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+}
+details summary::-webkit-details-marker{display:none}
+
+.mas{color:var(--naranja);font-size:26px;line-height:1;transition:transform .2s ease}
+details[open] .mas{transform:rotate(45deg)}
+
+.cuerpo{padding-bottom:34px}
+
+h3{
+  font-family:var(--display);
+  font-weight:600;font-size:15px;
+  letter-spacing:.16em;text-transform:uppercase;
+  color:var(--naranja);
+  margin:30px 0 14px;
+}
+h3:first-child{margin-top:6px}
+
+/* ---------- LISTA DE PRECIOS ---------- */
+
+.linea{
+  display:flex;align-items:baseline;gap:12px;
+  padding:11px 0;
+  border-bottom:1px solid #1C1C20;
+}
+.linea:last-child{border-bottom:0}
+
+.linea .que{flex:1}
+.linea .que strong{
+  font-family:var(--display);font-weight:500;font-size:20px;
+  display:block;line-height:1.2;
+}
+.linea .que span{color:var(--gris);font-size:17px;line-height:1.35;display:block;margin-top:2px}
+
+.linea .cuanto{
+  font-family:var(--display);font-weight:500;font-size:21px;
+  white-space:nowrap;text-align:right;
+}
+.linea .cuanto em{
+  display:block;font-style:normal;font-size:15px;
+  color:var(--naranja);font-family:var(--texto);
+}
+
+.nota{color:var(--gris);font-size:17px;line-height:1.45;margin-top:14px}
+
+ol{margin:0;padding-left:22px;color:var(--gris);font-size:17px;line-height:1.5}
+ol li{margin-bottom:12px}
+ol li b{color:var(--hueso);font-weight:600}
+
+/* ---------- PIE ---------- */
+
+.pie{
+  border-top:1px solid var(--borde);
+  margin-top:14px;padding:32px 0 46px;
+}
+.contactos{display:flex;flex-wrap:wrap;gap:10px 26px;margin-bottom:26px}
+.contactos a,.contactos span{
+  font-family:var(--display);font-weight:500;font-size:19px;
+  text-decoration:none;
+}
+.contactos a:hover{color:var(--naranja)}
+.contactos i{font-style:normal;color:var(--gris);font-size:14px;letter-spacing:.14em;text-transform:uppercase;display:block}
+
+.firma{
+  font-family:var(--display);font-weight:600;
+  font-size:15px;letter-spacing:.2em;text-transform:uppercase;
+  color:#4A4A4E;
+}
+
+@media (max-width:400px){
+  body{font-size:18px}
+  .puerta h2{font-size:33px}
+  .linea{flex-wrap:wrap}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+
+<header class="cabecera">
+  <div class="envoltura">
+    <img class="logo" src="logo-mixmyflow.png" alt="Mix My Flow">
+    <h1 class="nombre">Tadeo<br>Ríos<b>.</b></h1>
+    <p class="oficio">Ingeniero de audio y productor musical. Morelia, Michoacán.</p>
+    <p class="lema">No solo hago que suenes bien. Hago que te escuchen.</p>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ LAS DOS PUERTAS ============ -->
+  <section class="envoltura puertas">
+
+    <a class="puerta" href="https://docs.google.com/forms/d/e/1FAIpQLSfssQxlkacVRKr-jSfQgwJHS16yZfKzwRLM6-z1dCfo02oH7w/viewform">
+      <span class="donde">Desde donde estés</span>
+      <h2>Manda tu mezcla</h2>
+      <p class="precio">Desde $1,500 <small>por canción</small></p>
+      <p class="dice">Grabaste en tu casa o en otro estudio. Me mandas tus pistas y te las devuelvo listas para Spotify, Apple Music y todas las plataformas. Hasta 3 rondas de cambios, entrega de 7 a 10 días.</p>
+      <span class="boton">Mandar mi canción</span>
+    </a>
+
+    <a class="puerta" href="https://cal.com/tdo-theproducer">
+      <span class="donde">Aquí en Morelia</span>
+      <h2>Aparta el estudio</h2>
+      <p class="precio">Desde $360 <small>la hora</small></p>
+      <p class="dice">Vienes, grabas y sales con tus voces montadas sobre el beat. Dirección vocal incluida y cinco micrófonos para escoger. Entre más horas reservas, más barata sale cada una.</p>
+      <span class="boton">Ver horarios libres</span>
+    </a>
+
+  </section>
+
+  <p class="envoltura perfil">
+    ¿Vamos a trabajar juntos? Llena tu <a href="https://docs.google.com/forms/d/e/1FAIpQLScjN-vwAvL8nV76dLvEeG9-xDbiKzB0JUD567a9kdJ8JZV0lA/viewform">perfil de artista</a> una sola vez y no me lo vuelves a llenar nunca.
+  </p>
+
+  <!-- ============ FOTOS DEL ESTUDIO ============
+       Sustituye los tres <div class="hueco"> por:
+       <img src="estudio-1.jpg" alt="Estudio Mix My Flow">
+       Cuadradas, mínimo 700x700px. Súbelas junto al index.html.
+  ============================================== -->
+  <section class="envoltura fotos">
+    <img class="ancha" src="estudio-mesa.jpg" alt="Estación de trabajo del estudio con monitores Yamaha HS7 y sesión abierta">
+    <div class="par">
+      <img src="estudio-sm7db.jpg" alt="Micrófono Shure SM7dB">
+      <img src="estudio-super55.jpg" alt="Micrófono Shure Super 55">
+    </div>
+    <p class="pie-foto">Cinco micrófonos, monitoreo Yamaha HS7 y tratamiento acústico. Morelia, Michoacán.</p>
+  </section>
+
+  <!-- ============ RATE CARD ============ -->
+  <section class="envoltura bloque">
+    <details>
+      <summary>Todos los precios <span class="mas">+</span></summary>
+      <div class="cuerpo">
+
+        <h3>Grabación por horas</h3>
+        <div class="linea"><div class="que"><strong>1 hora</strong><span>$360 la hora</span></div><div class="cuanto">$360</div></div>
+        <div class="linea"><div class="que"><strong>2 horas</strong><span>$340 la hora</span></div><div class="cuanto">$680</div></div>
+        <div class="linea"><div class="que"><strong>4 horas</strong><span>$310 la hora</span></div><div class="cuanto">$1,240</div></div>
+        <div class="linea"><div class="que"><strong>6 horas</strong><span>$280 la hora</span></div><div class="cuanto">$1,680</div></div>
+        <div class="linea"><div class="que"><strong>8 horas · día completo</strong><span>$250 la hora · lunes y miércoles</span></div><div class="cuanto">$2,000</div></div>
+        <div class="linea"><div class="que"><strong>4 horas · sábado</strong><span>Fuera de horario. Mínimo 4 horas y se aparta con 72 horas de anticipación.</span></div><div class="cuanto">$1,600</div></div>
+        <p class="nota">Las horas se usan el mismo día, corridas. Incluye dirección vocal, comping y un rough mix de salida para que te lleves tus voces sobre el beat. Grabo voz, guitarra, bajo y percusión. Batería próximamente.</p>
+
+        <h3>Mezcla y mastering</h3>
+        <div class="linea"><div class="que"><strong>Voz + beat en estéreo</strong><span>Tu beat en un solo archivo, como te lo dieron. Es el caso más común.</span></div><div class="cuanto">$1,500</div></div>
+        <div class="linea"><div class="que"><strong>Voz + beat en stems</strong><span>Traes el beat en pistas separadas. Más control sobre la instrumental, mejor resultado.</span></div><div class="cuanto">$2,000</div></div>
+        <p class="nota">Por canción, mismo precio presencial o a distancia. Hasta 3 revisiones y entrega de 7 a 10 días, masterizado para todas las plataformas. Si no sabes cómo tienes tu beat, mándalo como lo tengas y yo te digo.</p>
+
+        <h3>Paquetes de single</h3>
+        <div class="linea"><div class="que"><strong>Track One</strong><span>Tu beat + 2 h de grabación con dirección vocal, mezcla rápida y mastering express, 5 fotos para redes. Aplica solo con beat en estéreo.</span></div><div class="cuanto">$1,800<em>1ª vez $1,440</em></div></div>
+        <div class="linea"><div class="que"><strong>Esencial</strong><span>Tu beat + 4 h de grabación con comping, mezcla y master completos con 3 revisiones, clip vertical y 5 fotos.</span></div><div class="cuanto">$2,500<em>1ª vez $2,000</em></div></div>
+        <div class="linea"><div class="que"><strong>Full Pro Vision</strong><span>Producción original desde cero + 6 h de grabación, mezcla y master premium, consultoría de lanzamiento con plan escrito, mini sesión de fotos y clip.</span></div><div class="cuanto">$5,999<em>1ª vez $5,099</em></div></div>
+        <div class="linea"><div class="que"><strong>Full Pro + Video</strong><span>Todo lo anterior más video musical a dos cámaras, editado y con corrección de color.</span></div><div class="cuanto">$7,499<em>1ª vez $6,374</em></div></div>
+        <p class="nota">El descuento de primera vez ya está aplicado arriba. No hay que pedirlo ni negociarlo: aplica una vez por paquete y por cliente.</p>
+
+        <h3>Video musical en estudio</h3>
+        <div class="linea"><div class="que"><strong>One shot · 1 cámara</strong><span>Toma continua en 4K con Canon R50, corrección de color, listo para YouTube.</span></div><div class="cuanto">$1,500</div></div>
+        <div class="linea"><div class="que"><strong>2 cámaras</strong><span>Canon R50 + iPhone Pro. Edición con cortes y corrección de color.</span></div><div class="cuanto">$2,300</div></div>
+        <div class="linea"><div class="que"><strong>Solo el crudo</strong><span>Sin edición, en bruto.</span></div><div class="cuanto">−30%</div></div>
+
+        <h3>Podcast</h3>
+        <div class="linea"><div class="que"><strong>Solo audio</strong><span>Hasta 2 h por episodio, edición incluida, listo en 5 a 7 días.</span></div><div class="cuanto">$1,800<em>por episodio</em></div></div>
+        <div class="linea"><div class="que"><strong>Con video · 1 cámara</strong><span>Lo mismo más video 4K editado y con corrección de color.</span></div><div class="cuanto">$2,500<em>por episodio</em></div></div>
+        <p class="nota">Hora extra: $300.</p>
+
+        <h3>EP y álbum</h3>
+        <div class="linea"><div class="que"><strong>3 a 5 rolas</strong></div><div class="cuanto">−10%</div></div>
+        <div class="linea"><div class="que"><strong>6 a 9 rolas</strong></div><div class="cuanto">−15%</div></div>
+        <div class="linea"><div class="que"><strong>10 o más</strong></div><div class="cuanto">−20%</div></div>
+        <p class="nota">El descuento se activa con el 50% de anticipo del proyecto completo.</p>
+
+        <h3>Incluido en tu sesión</h3>
+        <p class="nota">Barra de cortesía con agua, café y refresco. Sin alcohol. Cinco fotos express en todos los paquetes, y mini sesión completa desde Full Pro Vision. Clip vertical de tu sesión desde el paquete Esencial.</p>
+
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ TÉRMINOS ============ -->
+  <section class="envoltura bloque">
+    <details>
+      <summary>Cómo se paga y cómo trabajo <span class="mas">+</span></summary>
+      <div class="cuerpo">
+        <ol>
+          <li><b>Mezcla y mastering.</b> 50% para arrancar y 50% antes de que te entregue los archivos finales. Cuando esté lista te mando un MP3 para que la escuches, y hasta entonces pagas el resto.</li>
+          <li><b>Beat en estéreo o en stems.</b> Si traes el beat en pistas separadas puedo trabajar la instrumental por dentro y el resultado es mejor. Si solo lo tienes en un archivo, también se hace, nada más el precio cambia.</li>
+          <li><b>Grabación, Track One y podcast.</b> 100% por adelantado. Tu fecha queda apartada cuando se confirma el pago.</li>
+          <li><b>Paquetes de Esencial en adelante y EP o álbum.</b> 50% para apartar la fecha y 50% contra entrega.</li>
+          <li><b>Horas.</b> Las de cada bloque se usan el mismo día, corridas. Si necesitas partirlas en varios días, se cobra la tarifa que corresponda a cada jornada.</li>
+          <li><b>Grupos.</b> Cada voz necesita su propio ajuste, sus tomas y su selección. Un solista saca una canción en una hora; de tres personas para arriba, calcula cuatro.</li>
+          <li><b>Revisiones.</b> Hasta 3 rondas de cambios por notas en los servicios con mezcla. Track One no lleva revisiones y los cambios estructurales se cotizan aparte.</li>
+          <li><b>Entregas.</b> El tiempo corre desde que entregas todo tu material y apruebas cada etapa. Las revisiones extra recorren la fecha.</li>
+          <li><b>Archivos.</b> Los proyectos se respaldan 3 meses. Después es responsabilidad del cliente.</li>
+          <li><b>Puntualidad.</b> El tiempo de estudio corre desde la hora agendada.</li>
+          <li><b>Locación.</b> Todo se hace dentro del estudio. Locaciones externas y servicios no listados se cotizan aparte.</li>
+          <li><b>¿No tienes beat?</b> Te ayudo a conseguir uno con licencia en regla. Se cotiza aparte.</li>
+          <li><b>Portafolio.</b> Me reservo el derecho de usar fragmentos del trabajo terminado en mi portafolio y en mis redes.</li>
+        </ol>
+        <p class="nota">Precios en pesos mexicanos, vigentes 2026. Pago por transferencia SPEI, o con tarjeta y meses sin intereses.</p>
+      </div>
+    </details>
+  </section>
+
+</main>
+
+<footer class="envoltura pie">
+  <div class="contactos">
+    <a href="https://wa.me/523318640661"><i>WhatsApp</i>33 1864 0661</a>
+    <a href="https://instagram.com/tdo.rap"><i>Instagram</i>@tdo.rap</a>
+    <span><i>Estudio</i>Morelia, Mich.</span>
+  </div>
+  <p class="firma">Real recognize real.</p>
+</footer>
+
+</body>
+</html>
